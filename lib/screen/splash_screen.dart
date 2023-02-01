@@ -9,6 +9,14 @@ class SplashScreen extends StatefulWidget {
 
 class Splash extends State<SplashScreen> {
   @override
+  void initState() {
+    Future.delayed(
+      Duration(seconds: 4),
+      () => Navigator.pushNamed(context, '/sign_up_page'),
+    );
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
@@ -16,7 +24,9 @@ class Splash extends State<SplashScreen> {
           child: Stack(
             children: [
               Container(
-                child: Text('Welcome to BudgetMen',style: TextStyle(fontSize: 30,color: Colors.yellow.shade900)),
+                child: Text('Welcome to BudgetMen',
+                    style:
+                        TextStyle(fontSize: 30, color: Colors.yellow.shade900)),
               )
             ],
           ),

@@ -1,9 +1,15 @@
+import 'package:finalproject/screen/sign_up_page.dart';
 import 'package:finalproject/screen/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: SplashScreen(),
+    // home: SplashScreen(),
+    initialRoute: '/',
+    routes: {
+      '/':(context) => SplashScreen(),
+      '/sign_up_page':(context) => SignUpPage(),
+    },
   ));
 }
 
