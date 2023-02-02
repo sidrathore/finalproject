@@ -1,3 +1,4 @@
+import 'package:finalproject/screen/basic_details.dart';
 import 'package:finalproject/screen/sign_up_page.dart';
 import 'package:finalproject/screen/splash_screen.dart';
 import 'package:flutter/material.dart';
@@ -9,6 +10,7 @@ void main() {
     routes: {
       '/':(context) => SplashScreen(),
       '/sign_up_page':(context) => SignUpPage(),
+      '/basic_details':(context) => BasicDetails(),
     },
   ));
 }
